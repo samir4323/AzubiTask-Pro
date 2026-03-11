@@ -2,6 +2,9 @@
 
 namespace App\Models;
 
+use App\Models\User;
+use App\Models\Department;
+
 use Illuminate\Database\Eloquent\Model;
 
 class Task extends Model
@@ -15,11 +18,13 @@ class Task extends Model
         'due_date'
     ];
 
-    public function user(){
-        return $this->belongsTo(User::class);
-    }
+    public function user()
+{
+    return $this->belongsTo(User::class);
+}
 
-    public function departement(){
-        return $this->belongsTo(Department::class);
-    }
+    public function department()
+{
+    return $this->belongsTo(Department::class);
+}
 }
