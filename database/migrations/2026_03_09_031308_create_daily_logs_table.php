@@ -12,13 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('daily_logs', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId("user_id")->constrained("users");
-            $table->date("log_date");
-            $table->text("content");
-            $table->decimal("hours_spent");
-            $table->timestamps();
-        });
+        $table->id();
+        $table->foreignId('user_id')->constrained()->onDelete('cascade');
+        $table->date('log_date');
+        $table->text('content');
+        $table->decimal('hours_spent', 4, 2);
+        $table->timestamps();
+    });
     }
 
     /**

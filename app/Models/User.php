@@ -18,12 +18,8 @@ use HasApiTokens, HasFactory, Notifiable;
      * @var list<string>
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
-        'start_date',
-        'company_name',
-    ];
+    'name', 'email', 'password', 'department_id', 'role', 'start_date', 'company_name'
+];
 
     /**
      * The attributes that should be hidden for serialization.
@@ -51,7 +47,11 @@ use HasApiTokens, HasFactory, Notifiable;
     public function tasks(){
         return $this->hasMany(Task::class);
     }
-    public function daily_logs(){
-        return $this->hasMany(Dailylog::class);
+    public function dailyLogs(){
+        return $this->hasMany(DailyLog::class);
     }
+    public function department()
+{
+    return $this->belongsTo(Department::class);
+}
 }
