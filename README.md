@@ -1,4 +1,4 @@
-# 🐘 AzubiTask-Pro | Backend API (Laravel)
+# 🐘 AzubiTask-Pro | Backend API (Laravel)          #reactjs #tailwindcss #frontend #axios
 
 This is the RESTful API that powers the **AzubiTask-Pro** system. It manages the database, business logic, and secure authentication.
 
