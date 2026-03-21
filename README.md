@@ -1,22 +1,36 @@
-# AzubiTask-Pro 🚀
+# 🐘 AzubiTask-Pro | Backend API (Laravel)
 
-### Professionelles Aufgabenverwaltungssystem für Auszubildende
+This is the RESTful API that powers the **AzubiTask-Pro** system. It manages the database, business logic, and secure authentication.
 
-AzubiTask-Pro ist eine moderne RESTful API, entwickelt mit **Laravel 11**. Das System wurde konzipiert, um die Verwaltung von Aufgaben für Auszubildende durch Automatisierung und klare Strukturen zu optimieren.
+---
 
-#### 🛠️ Technischer Stack
-* [cite_start]**Backend:** Laravel 11 (PHP 8.x)[cite: 54].
-* [cite_start]**Datenbank:** MySQL[cite: 54].
-* **Authentifizierung:** Laravel Sanctum (Token-basiert).
-* [cite_start]**Architektur:** REST API mit API-Resources[cite: 54, 57].
+## 🔗 Project Links
+* **Frontend Repository:** [Link to your React Repo]
 
-#### ✨ Hauptmerkmale (Features)
-* **Sicheres Auth-System:** Implementierung von Registrierung und Login mit Bearer-Token-Validierung via Sanctum.
-* [cite_start]**Effizientes Task-Management:** Vollständiges CRUD-System für Aufgaben[cite: 56].
-* [cite_start]**Automatisierte Logik:** Intelligente Berechnung der Dringlichkeit (`is_urgent`) basierend auf Deadlines[cite: 58].
-* [cite_start]**Strukturierte Daten:** Bereitstellung von JSON-Daten für eine nahtlose React-Integration[cite: 57].
+---
 
-#### 🚀 Schnelle Einrichtung
-1. [cite_start]Repository klonen: `git clone https://github.com/samir4323/AzubiTask-Pro.git`[cite: 60].
-2. `composer install` ausführen.
-3. `.env`-Datei konfigurieren und `php artisan migrate` ausführen.
+## 🛠️ Tech Stack & Architecture
+* **Framework:** Laravel 11 (PHP 8.2+)
+* **Auth:** Laravel Sanctum (Token-based)
+* **Database:** MySQL (Eloquent ORM)
+* **API Structure:** Standard RESTful Endpoints.
+
+---
+
+## 🚀 Installation & Setup
+
+1. **Clone the repository:**
+   `git clone [Link to this Repo]`
+
+2. **Install PHP dependencies:**
+   `composer install`
+
+3. **Setup Environment:**
+   `cp .env.example .env`
+   `php artisan key:generate`
+
+4. **Run Migrations:**
+   `php artisan migrate`
+
+5. **Start API Server:**
+   `php artisan serve`
