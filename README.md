@@ -5,7 +5,7 @@ This is the RESTful API that powers the **AzubiTask-Pro** system. It manages the
 ---
 
 ## 🔗 Project Links
-* **Frontend Repository:** [Link to your React Repo]
+* **Frontend Repository:** (https://github.com/samir4323/AzubiTask-Pro.git)
 
 ---
 
